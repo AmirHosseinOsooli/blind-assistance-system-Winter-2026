@@ -474,7 +474,7 @@ Contributions welcome! Here's how:
 ## 👤 Author
 
 **AmirHossein Osooli**
-- Robotics Rehabilitation Final Project
+- Robotic Rehabilitation Final Project
 ---
 
 ### Related Projects
