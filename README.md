@@ -469,7 +469,7 @@ Contributions welcome! Here's how:
 
 **Course:** Robotics Rehabilitation  
 **Institution:** University of Tehran
-**Semester:** Winter 2026
+**Semester:** Fall 2026
 
 ## 👤 Author
 
