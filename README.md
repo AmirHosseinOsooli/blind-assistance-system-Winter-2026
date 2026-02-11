@@ -569,7 +569,7 @@ copies or substantial portions of the Software.
 
 ### Quick Links
 
-🎬 [Demo](# demo-video) | 🔧 [Hardware](#hardware-components) | 💻 [Code](src/) | 🐛 [Issues](https://github.com/yourusername/blind-assistance-system/issues)
+🎬 [Demo](#demo-video) | 🔧 [Hardware](#hardware-components) | 💻 [Code](src/) | 🐛 [Issues](https://github.com/AmirHosseinOsooli/blind-assistance-system-Winter-2026/issues)
 
 ---
 
