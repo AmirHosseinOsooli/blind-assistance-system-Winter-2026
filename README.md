@@ -15,7 +15,15 @@ An affordable, accessible navigation aid that uses ultrasonic sensors to detect 
 
 > **📹 Watch the system in action!**
 
-**Performance Demo:** [▶️ View Performance Video](demo/performance_video.mp4)
+<div align="center">
+  <a href="https://youtube.com/shorts/dQZRN9sjao8">
+    <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" 
+         alt="Path Pulse Demo" width="80%">
+  </a>
+  <p><em>👆 Click to watch on YouTube</em></p>
+</div>
+
+[![Watch on YouTube](https://img.shields.io/badge/▶️_Watch_Full_Demo-YouTube-red?style=for-the-badge&logo=youtube)](https://youtube.com/shorts/dQZRN9sjao8)
 
 **What you'll see:**
 - ✅ Real-time obstacle detection (front, right, back sensors)
