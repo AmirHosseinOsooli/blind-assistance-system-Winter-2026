@@ -17,7 +17,7 @@ An affordable, accessible navigation aid that uses ultrasonic sensors to detect 
 
 <div align="center">
   <a href="https://youtube.com/shorts/dQZRN9sjao8">
-    <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" 
+    <img src="https://img.youtube.com/vi/dQZRN9sjao8/maxresdefault.jpg" 
          alt="Path Pulse Demo" width="80%">
   </a>
   <p><em>👆 Click to watch on YouTube</em></p>
