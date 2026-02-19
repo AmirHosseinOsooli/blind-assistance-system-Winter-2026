@@ -110,18 +110,18 @@ An affordable, accessible navigation aid that uses ultrasonic sensors to detect 
 ## 📐 System Architecture
 
 ```
-┌─────────────────────┐
-│      USER           │
-│   (Wears Device)    │
-└──────────┬──────────┘
-           │
-    ┌──────┴──────┐
-    │             │
-    ▼             ▼
-┌────────┐   ┌─────────┐
-│ ESP32  │◄─►│ Phone   │
-│ Device │WiFi│ App     │
-└───┬────┘   └─────────┘
+ ┌─────────────────────┐
+ │      USER           │
+ │   (Wears Device)    │
+ └──────────┬──────────┘
+            │
+     ┌──────┴──────┐
+     │             │
+     ▼             ▼
+┌────────┐    ┌─────────┐
+│ ESP32  │◄──►│  Phone  │
+│ Device │WiFi│   App   │
+└───┬────┘    └─────────┘
     │
     │ GPIO Pins
     ▼
@@ -138,22 +138,22 @@ An affordable, accessible navigation aid that uses ultrasonic sensors to detect 
 ## 📊 Pin Configuration
 
 ### ESP32 GPIO Mapping
-
-| Sensor | Trigger Pin | Echo Pin | Coverage |
-|--------|------------|----------|----------|
+_____________________________________________________
+|  Sensor   Trigger Pin Echo Pin      Coverage      |
+|-----------|---------|---------|-------------------|
 | **Front** | GPIO 27 | GPIO 26 | Forward obstacles |
-| **Right** | GPIO 33 | GPIO 32 | Side obstacles |
-| **Back** | GPIO 12 | GPIO 14 | Rear obstacles |
-
+| **Right** | GPIO 33 | GPIO 32 | Side obstacles    |
+| **Back**  | GPIO 12 | GPIO 14 | Rear obstacles    |
+_____________________________________________________
 ### Distance Alert Thresholds
-
-| Range | Distance | Alert Level | Color | Voice |
-|-------|----------|-------------|-------|-------|
-| **Danger** | < 50cm | Very Close | 🔴 Red | "Very close" |
-| **Warning** | 50-100cm | Close | 🟠 Orange | "Close" |
+______________________________________________________________________
+|    Range       Distance   Alert Level      Color         Voice     |
+|-------------|-----------|-------------|------------|---------------|
+| **Danger**  | < 50cm    | Very Close  | 🔴 Red    | "Very close"  | 
+| **Warning** | 50-100cm  | Close       | 🟠 Orange | "Close"       |
 | **Caution** | 100-200cm | Approaching | 🟡 Yellow | "Approaching" |
-| **Safe** | > 200cm | Clear | 🟢 Green | "Path clear" |
-
+| **Safe**    | > 200cm   | Clear       | 🟢 Green  | "Path clear"  |
+______________________________________________________________________
 ---
 
 ## 🚀 Quick Start Guide
@@ -284,13 +284,14 @@ We used an AI-powered no-code app builder:
 ---
 
 ### Voice Alert Examples
-
-| Alert | Meaning |
-|-------|---------|
-| "Path clear" | No obstacles within 2 meters |
-| "Obstacle front, very close, 23 centimeters" | Front sensor: 23cm |
-| "Obstacle right, close, 87 centimeters" | Right sensor: 87cm |
-| "Obstacle back, approaching, 156 centimeters" | Back sensor: 156cm |
+________________________________________________________________________________
+|                      Alert                    |            Meaning           |
+|-----------------------------------------------|------------------------------|
+| "Path clear"                                  | No obstacles within 2 meters |
+| "Obstacle front, very close, 23 centimeters"  | Front sensor: 23cm           |
+| "Obstacle right, close, 87 centimeters"       | Right sensor: 87cm           |
+| "Obstacle back, approaching, 156 centimeters" | Back sensor: 156cm           |
+________________________________________________________________________________
 
 **Priority System:**
 - Reports **closest** obstacle first
@@ -329,18 +330,18 @@ const char* password = "YourPassword";  // Min 8 chars
 ---
 
 ## 📊 Performance Metrics
-
-| Metric | Value |
-|--------|-------|
-| **Detection Range** | 2-400 cm |
-| **Update Rate** | ~2Hz (every 2 seconds) |
-| **Wi-Fi Range** | 10-15 meters indoors |
-| **Power Draw** | ~250mA @ 5V |
-| **Battery Life** | 8-10 hours (2500mAh) |
-| **Response Time** | < 500ms |
-| **Accuracy** | ±3cm |
-| **Weight** | ~200g (with packaging) |
-
+________________________________________________
+|        Metric       |         Value          |
+|---------------------|------------------------|
+| **Detection Range** | 2-400 cm               |
+| **Update Rate**     | ~2Hz (every 2 seconds) |
+| **Wi-Fi Range**     | 10-15 meters indoors   |
+| **Power Draw**      |  ~250mA @ 5V           |
+| **Battery Life**    | 8-10 hours (2500mAh)   |
+| **Response Time**   | < 500ms                |
+| **Accuracy**        | ±3cm                   |
+| **Weight**          | ~200g (with packaging) |
+________________________________________________
 ---
 
 ## 🐛 Troubleshooting
@@ -527,14 +528,14 @@ copies or substantial portions of the Software.
 
 ## 🌟 Project Stats
 
-| Metric | Value |
-|--------|-------|
-| **Build Cost** | ~$25 USD |
-| **Build Time** | 4-6 hours |
-| **Difficulty** | ⭐⭐⭐ Intermediate |
-| **Impact** | ♿ High (Accessibility) |
-| **Code Size** | ~180 lines Arduino C |
-| **Components** | 5 main parts |
+|     Metric     |          Value           |
+|----------------|--------------------------|
+| **Build Cost** | ~$25 USD                 |
+| **Build Time** | 4-6 hours                |
+| **Difficulty** | ⭐⭐⭐ Intermediate     |
+| **Impact**     | ♿ High (Accessibility)  |
+| **Code Size**  | ~180 lines Arduino C     |
+| **Components** |       5 main parts       |
 
 ---
 
